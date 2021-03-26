@@ -1,0 +1,17 @@
+import random
+liczba = random.randint(0, 100)
+# print("Wylosowana liczba:", liczba)
+
+for i in range(15):
+    print("Próba ", i + 1)
+    odp = input("Zgadnij wylosowaną liczbę:  ")
+    # print("Podałeś liczbę: ", odp)
+
+    if liczba == int(odp):
+        print("Zgadłeś!")
+        break
+    elif i == 14:
+        print("Wylosowana liczba wynosiła:  ", liczba)
+    else:
+        print("Nie zgadłeś. Spróbuj jeszcze raz.")
+    print()
